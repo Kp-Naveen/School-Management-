@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
+<head>
+
+</head>
+<body>
+
+
+	
+
+
+		<form action="/save" method="post" th:object="${book}">
+			
+			<input type="hidden" name="id" th:value="${book.id}"/>
+			Name <input type="text"  name="name" th:value="${book.name}">	
+			Author<input type="text"  name="author" th:value="${book.author}">	
+			Price <input type="text"   name="price" th:value="${book.price}">	
+			 <button type="submit"  >Submit</button> 
+		</form>
+	 
+
+
+	
+
+</body>
+</html>
